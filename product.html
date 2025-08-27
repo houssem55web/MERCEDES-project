@@ -1,0 +1,196 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link rel="icon" type="image/png" href="image/Mercedes-Logo.svg(1).png">
+<title>Product-Mercedes-Benz</title>
+
+</head>
+<body>
+       <nav class="navbar navbar-expand-lg navbar-light bg-light position-relative top-0 start-0 w-100">
+  <div class="container">
+
+    <!-- Brand text (mobile only) -->
+    <a class="navbar-brand d-lg-none" href="index.html">MERCEDES-BENZ</a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse p-2 flex-column" id="navbarContent">
+      
+      <!-- Logo (desktop only) -->
+      <div class="d-flex justify-content-center">
+        <a class="navbar-brand d-none d-lg-block" href="index.html">
+          <img src="image/Mercedes-Benz_Logo_2010.svg" height="40" width="auto" alt="Mercedes-Benz Logo">
+        </a>
+      </div>
+
+      <!-- Future nav links -->
+      <div class="d-block w-100">
+        <ul class="navbar-nav d-flex justify-content-center align-items-center pt-3">
+            <li class="nav-item mx-2">
+                <a class="nav-link  " href="index.html">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link active" href="product.html">
+                    Product
+                </a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link" href="about.html">
+                    About
+                </a>
+            </li>
+            <li class="nav-item mx-2">
+                <a class="nav-link" href="contact.html">
+                    Contact
+                </a>
+            </li>
+          <!-- Nav items will go here later -->
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+       <div class="row py-5 g-5">
+  <!-- Left half (images) -->
+  <div class="col-12 col-lg-6">
+    <img src="image/real-front.webp" 
+         class="m-1 w-100 slidermainimage" 
+         data-bs-toggle="modal" 
+         data-bs-target="#imageModal">
+
+    <div>
+      <img src="image/front. Mercedes-Benz EQE Berline.webp" width="10%" class="m-1 sliderthumb"/>
+      <img src="image/inside-mercedes.webp" width="10%" class="m-1 sliderthumb"/>  
+    </div>
+  </div>
+  <!-- Right half (description) -->
+  <div class="col-12 col-lg-6">
+    <h2 id="productname">
+      Mercedes-Benz EQE Berline 
+    </h2>
+    <small class="text-muted">
+      Type: BEV
+    </small>
+    <h4 class="my-4">
+      From USD <span id="price">97,760</span> $
+    </h4>
+    <label for="selectmodel" class="text-muted">
+      Model
+    </label>
+    <select class="form-select" name="selectmodel" id="model">
+        <option>First Edition</option>
+        <option >Black Series</option>
+        <option selected>Luxury Line</option>
+        <option>Business Line</option>
+    </select>
+    <div class="d-grid my-4">
+          <button class="btn btn-dark btn-lg rounded-2 shadow-sm" type="button" id="purchaseBtn">
+                Purchase Now
+          </button>
+               </div>
+    <div class="accordion" id="accordionExample">
+  <!-- Overview -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Overview
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        The <strong>Mercedes-Benz EQE Berline</strong> is a fully electric luxury sedan, part of the EQ family. It offers a balance of comfort, advanced tech, and sustainable driving.
+      </div>
+    </div>
+  </div>
+  <!-- Performance -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Performance
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Powered by a <strong>BEV platform</strong>, the EQE offers rear-wheel and all-wheel drive options. Range is up to <strong>660 km</strong> (WLTP) with fast charging capability. AMG models deliver high performance with sporty tuning.
+      </div>
+    </div>
+  </div>
+
+  <!-- Interior & Technology -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Interior & Technology
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Features include the advanced <strong>MBUX Hyperscreen</strong>, premium materials, spacious seating, and cutting-edge driver assistance systems for a modern luxury experience.
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+ <div class="container footer">
+        <footer class="d-flex justify-content-between my-5 text-start flex-wrap">
+            <ul class="nav-flex-column">
+                 <li class="nav-item">
+                    <a href="index.html" class="nav-link text-muted">
+                        <img src="image/Mercedes-Benz_Logo_2010.svg" height="100">
+                    </a>
+                </li>
+                <li class="fw-bold nav-item">
+                    <p class="text-dark mt-3">
+                        All right reserverd © Mercedes-Benz,Designed with love by Houssem Mk  
+                    </p>
+                </li>
+            </ul>
+            <ul class="nav-flex-column">
+                 <li class="fw-bold nav-item">
+                    <a href="#" class="nav-link text-dark">
+                        Pages
+                    </a>
+                 </li>
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link text-dark">
+                        Home
+                    </a>
+                 </li>
+                  <li class="nav-item ">
+                    <a href="product.html" class="nav-link text-dark">
+                        Product
+                    </a>
+                 </li>
+                  <li class="nav-item">
+                    <a href="about.html" class="nav-link text-dark">
+                        About
+                    </a>
+                 </li>
+                  <li class="nav-item">
+                    <a href="contact.html" class="nav-link text-dark">
+                        Contact
+                    </a>
+                 </li>
+                
+            </ul>
+        </footer>
+     </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
